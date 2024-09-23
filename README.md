@@ -53,9 +53,9 @@ npm dev run
 Você pode acessar a API hospedada [aqui](https://github.com/ThiagoOliveiraJ/miniprojetom4git).
 
 ## Preview do Projeto
-![Tela de Inicio](./src/assets/img/TelaInicial.png)
-![Outra Seção](./src/assets/img/Section.png)
-![Exemplo de Card de Dicas](./src/assets/img/Card.png)
+![Tela de Inicio](/src/assets/img/TelaInicial.png)
+![Outra Seção](/src/assets/img/Section.png)
+![Exemplo de Card de Dicas](/src/assets/img/Card.png)
 
 
 Para dúvidas ou feedback ou contato:
