@@ -20,7 +20,7 @@ Este projeto consiste em uma landing page interativa que consome uma API desenvo
 - **JavaScript**: Lógica de manipulação do DOM e requisições à API.
 - **Axios**: Biblioteca para facilitar requisições HTTP.
 - **Splide JS**: Implementação de carrossel de dicas.
-- **ScrollReveal JS**: Implementação de efeoto de rolagem.
+- **ScrollReveal JS**: Implementação de efeito de rolagem.
 - **Node.js**: Ambiente de execução para JavaScript no servidor (para a API).
 
 ### Versões das Tecnologias
