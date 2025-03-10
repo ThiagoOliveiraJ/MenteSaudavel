@@ -50,7 +50,7 @@ npm dev run
 
 ## Repositório da API
 
-Você pode acessar a API hospedada [aqui]([https://github.com/ThiagoOliveiraJ/miniprojetom4git](https://github.com/ThiagoOliveiraJ/miniprojetom4)).
+Você pode acessar a API hospedada <a href="https://github.com/ThiagoOliveiraJ/miniprojetom4"> Aqui. </a>
 
 ## Preview do Projeto
 ![Tela de Inicio](/src/assets/img/TelaInicial.png)
