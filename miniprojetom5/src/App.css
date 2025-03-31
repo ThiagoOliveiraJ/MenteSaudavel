@@ -212,6 +212,10 @@ header .menu li a:hover {
 }
 
 
+.loading-text{
+  color: #98B0FA !important;
+}
+
 @media screen and (max-width: 720px) {
   header {
     flex-direction: column;
