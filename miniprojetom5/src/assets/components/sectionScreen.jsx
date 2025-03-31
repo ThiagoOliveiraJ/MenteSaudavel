@@ -3,6 +3,8 @@ import api from "../../api";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css'; 
 
+import Loading from "./loading";
+
 
 
 function SectionScreen({ title, text, type, imgCard }) {
@@ -33,7 +35,7 @@ function SectionScreen({ title, text, type, imgCard }) {
   }, [type]);
 
   if (carregando) {
-    return console.log('Carregando');
+    return <Loading/>
   }
 
   return (
