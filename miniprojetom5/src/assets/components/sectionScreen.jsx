@@ -55,6 +55,7 @@ function SectionScreen({ title, text, type, imgCard }) {
             breakpoints: {
               768: {
                 perPage: 1,
+                arrows:false,
               },
               1024: {
                 perPage: 2,
