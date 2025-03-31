@@ -211,9 +211,19 @@ header .menu li a:hover {
   transform: scale(0.96);
 }
 
-
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}
 .loading-text{
   color: #98B0FA !important;
+}
+
+.icon-loading{
+  width: 40px;
 }
 
 @media screen and (max-width: 720px) {

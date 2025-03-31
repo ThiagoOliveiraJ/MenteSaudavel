@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../api";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css'; 
+import '@splidejs/splide/dist/css/splide.min.css';
 
 import Loading from "./loading";
 
@@ -16,26 +16,26 @@ function SectionScreen({ title, text, type, imgCard }) {
     if (type === "MentalWellness") {
       setCarregando(true);
       api.get("mental-wellness-tips").then(({ data }) => {
+          setListaDicas(data.listTips);
+          setCarregando(false);
+      });
+    } if (type === "meditationResources") {
+      setCarregando(true);
+      api.get("meditation-resources").then(({ data }) => {
         setListaDicas(data.listTips);
         setCarregando(false);
       });
-    }if(type === "meditationResources"){
-        setCarregando(true);
-        api.get("meditation-resources").then(({ data }) => {
-          setListaDicas(data.listTips);
-          setCarregando(false);
-        });
-    }if(type === "physicalActivities"){
-        setCarregando(true);
-        api.get("physical-activities").then(({ data }) => {
-          setListaDicas(data.listTips);
-          setCarregando(false);
-        });
+    } if (type === "physicalActivities") {
+      setCarregando(true);
+      api.get("physical-activities").then(({ data }) => {
+        setListaDicas(data.listTips);
+        setCarregando(false);
+      });
     }
   }, [type]);
 
   if (carregando) {
-    return <Loading/>
+    return <Loading />
   }
 
   return (
@@ -66,7 +66,7 @@ function SectionScreen({ title, text, type, imgCard }) {
             <SplideSlide key={index}>
               <div className="card">
                 <h3>{tip.tip}</h3>
-                <img className="img-card" src={imgCard}/>
+                <img className="img-card" src={imgCard} />
                 <p>{tip.description}</p>
                 <span className="category">{tip.category}</span>
               </div>
